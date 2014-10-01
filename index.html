@@ -1,0 +1,63 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Foodclub preloader</title>
+	
+	<meta charset="utf-8">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+
+	<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+</head>
+
+<body data-site-id="s1">
+
+<div style="width: 900px; margin: 0 auto; text-align: center;">
+	<h1>Preloader</h1>
+	<br>
+	<span class="b-preloader"></span>
+</div>
+	
+<style>
+h1 {
+	font-family: "Lobster", cursive;
+}
+.b-preloader {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	background: url(preloader.gif) no-repeat 0 0;
+	animation: rotateAnimation 2s infinite cubic-bezier(0.680, 0.235, 0.280, 0.755), frames 14s infinite step-start 1s;
+	-webkit-animation: rotateAnimation 2s infinite cubic-bezier(0.680, 0.235, 0.280, 0.755), frames 14s infinite step-start 1s;
+}
+
+@keyframes rotateAnimation {
+	from { transform: rotate(0deg); }
+	to { transform: rotate(360deg); }
+}
+@-webkit-keyframes rotateAnimation {
+	from { -webkit-transform: rotate(0deg); }
+	to { -webkit-transform: rotate(360deg); }
+}
+@keyframes frames {
+	0% { background-position: 0 0; }
+	14% { background-position: -50px 0; }
+	28% { background-position: -100px 0; }
+	43% { background-position: -150px 0; }
+	57% { background-position: -200px 0; }
+	71% { background-position: -250px 0; }
+	86% { background-position: -300px 0; }
+}
+@-webkit-keyframes frames {
+	0% { background-position: 0 0; }
+	14% { background-position: -50px 0; }
+	28% { background-position: -100px 0; }
+	43% { background-position: -150px 0; }
+	57% { background-position: -200px 0; }
+	71% { background-position: -250px 0; }
+	86% { background-position: -300px 0; }
+}
+</style>
+
+</body>
+</html>
